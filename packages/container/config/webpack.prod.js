@@ -10,7 +10,8 @@ const prodConfig = {
     output: {
         //all different files that are built use this pattern for naming to avoid
         //caching issues
-        filename: '[name].[contenthash].js'
+        filename: '[name].[contenthash].js',
+        publicPath: '/container/latest/'
     },
     plugins: [
         new ModuleFederationPlugin({
